@@ -1,7 +1,5 @@
-export PATH=/usr/local/bin:/usr/local/share/npm/bin:/usr/local/php5/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin
-
 #Add z completion
-. ~/.z.sh
+# . ~/.z.sh
 
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
@@ -50,6 +48,4 @@ yellow=$(tput setaf 3)
 
 export PS1='\[${grey}\]BJR-MBP:.\[$(branch_color)\]$(parse_git_branch)\[${magenta}\]@\[${yellow}\]\w\[${sgr0}\]: '
 
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

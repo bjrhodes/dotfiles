@@ -49,3 +49,6 @@ yellow=$(tput setaf 3)
 export PS1='\[${green}\]\u\[${magenta}\]@\[${yellow}\]BJR-MBP \[$(branch_color)\]$(parse_git_branch)\[${magenta}\]@\[${yellow}\]\w\[${sgr0}\] \n: '
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi

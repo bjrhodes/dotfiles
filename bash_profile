@@ -24,9 +24,9 @@ yellow=$(tput setaf 3)
    then
            gitver=$(git branch 2>/dev/null| sed -n '/^\*/s/^\* //p')
    else
-           return 0
+           gitver="no-repo"
    fi
-   echo -e "(${gitver}) "
+   echo -e "(${gitver})"
  }
 
  branch_color ()
@@ -36,16 +36,16 @@ yellow=$(tput setaf 3)
                  color=""
                  if git diff --quiet 2>/dev/null >&2
                  then
-                         color="${c_green}"
+                         color="${green}"
                  else
-                         color=${c_red}
+                         color=${red}
                  fi
          else
-                 return 0
+                 color=${red}
          fi
          echo -ne $color
  }
 
-export PS1='\[${grey}\]\u@BJR-MBP: \[$(branch_color)\]$(parse_git_branch)\[${magenta}\]@\[${yellow}\]\w\[${sgr0}\] \n: '
+export PS1='\[${green}\]\u\[${magenta}\]@\[${yellow}\]BJR-MBP \[$(branch_color)\]$(parse_git_branch)\[${magenta}\]@\[${yellow}\]\w\[${sgr0}\] \n: '
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh

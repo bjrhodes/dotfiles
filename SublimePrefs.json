@@ -1,0 +1,86 @@
+{
+    "binary_file_patterns":
+    [
+        "js-coverage/*",
+        "build/coverage/*",
+        "release/*",
+        "*.jpg",
+        "*.jpeg",
+        "*.png",
+        "*.gif",
+        "*.ttf",
+        "*.tga",
+        "*.dds",
+        "*.ico",
+        "*.eot",
+        "*.pdf",
+        "*.swf",
+        "*.jar",
+        "*.zip"
+    ],
+    "bold_folder_labels": true,
+    "detect_slow_plugins": false,
+    "ensure_newline_at_eof_on_save": true,
+    "font_face": "source code pro",
+    "font_size": 15.0,
+    "highlight_line": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "open_files_in_new_window": false,
+    "rulers":
+    [
+        80,
+        120
+    ],
+    "scroll_past_end": true,
+    "tab_size": 4,
+    "todo":
+    {
+        "case_sensitive": false,
+        "file_exclude_patterns":
+        [
+            "*.sublime-settings"
+        ],
+        "folder_exclude_patterns":
+        [
+            "vendor",
+            "compiled",
+            "dist",
+            "node_modules",
+            "build",
+            "lib",
+            "cat"
+        ],
+        "patterns":
+        {
+            "TODO": "@todo+(?P<todo>.*)$"
+        },
+        "result_title": "Still todo"
+    },
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": false,
+    "installed_packages":
+    [
+        "Alignment",
+        "ApacheConf.tmLanguage",
+        "ColorPicker",
+        "DocBlockr",
+        "Emmet",
+        "FileDiffs",
+        "GitGutter",
+        "Jasmine",
+        "JSONLint",
+        "LoremIpsum",
+        "Markdown Preview",
+        "More Layouts",
+        "Open-Include",
+        "Package Control",
+        "Sass",
+        "Text Pastry",
+        "TidyHTML5",
+        "TrailingSpaces"
+    ]
+}

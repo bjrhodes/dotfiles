@@ -63,6 +63,7 @@ apps=(
   virtualbox
   quicklook-json
   skype
+  java
 )
 
 # Install apps to /Applications

@@ -5,7 +5,7 @@ export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
 
-alias l="ls -lh"
+alias ls="ls -h --color"
 alias servedir="php -S localhost:3000"
 
 grey=`tput setaf 7`

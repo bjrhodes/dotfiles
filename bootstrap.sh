@@ -83,6 +83,10 @@ fonts=(
 echo "installing fonts..."
 brew cask install ${fonts[@]}
 
+# setup git
+git config --global push.default simple
+git config --global user.email "barry@mymedialab.co.uk"
+
 mkdir ~/tmp
 wget "https://gist.githubusercontent.com/brandonb927/3195465/raw/d20ab577180f93da4d9bbea1ddf2a67809c8f69d/osx-for-hackers.sh" 
 echo "Downloaded OSX for hackers into ~/tmp/osx-for-hackers.sh. Give it a read through, edit and run it..."

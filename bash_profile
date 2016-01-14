@@ -45,4 +45,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"

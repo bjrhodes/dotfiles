@@ -28,6 +28,7 @@ binaries=(
   graphicsmagick
   webkit2png
   bash-completion
+  mysql
   rename
   zopfli
   ffmpeg
@@ -56,6 +57,7 @@ apps=(
   google-chrome
   google-drive
   transmit
+  libreoffice
   firefox
   spotify
   vagrant
@@ -64,6 +66,8 @@ apps=(
   virtualbox
   quicklook-json
   skype
+  osxfuse
+  alfred
   java
 )
 

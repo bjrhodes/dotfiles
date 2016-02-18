@@ -1,6 +1,7 @@
 export PATH="./node_modules/.bin:$PATH"
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
+export PATH="/usr/local/lib/node_modules:$PATH"
 
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad
@@ -50,3 +51,5 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh

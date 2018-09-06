@@ -2,6 +2,10 @@ export PATH="./node_modules/.bin:$PATH"
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 export PATH="/usr/local/lib/node_modules:$PATH"
+export PATH="$PATH:~/Library/Python/2.7/bin"
+export CLICOLOR=1
+export LSCOLORS=dxfxcxdxbxegedabagacad
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`;
 
 export CLICOLOR=1
 export LSCOLORS=dxfxcxdxbxegedabagacad

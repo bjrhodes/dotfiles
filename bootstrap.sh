@@ -41,7 +41,10 @@ binaries=(
   ack
   hub
   git
+  tig
   wget
+  fasd
+  peco
 )
 
 echo "installing binaries..."

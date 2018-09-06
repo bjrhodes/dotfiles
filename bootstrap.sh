@@ -58,7 +58,7 @@ brew install caskroom/cask/brew-cask
 apps=(
   dropbox
   google-chrome
-  google-drive
+  sequel-pro
   transmit
   libreoffice
   firefox

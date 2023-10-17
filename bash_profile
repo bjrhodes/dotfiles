@@ -1,20 +1,42 @@
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- --- Path wrangling for order-of-resolution  --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+
 export PATH="./node_modules/.bin:$PATH"
+export PATH="/usr/local/bin:/opt/homebrew/bin:$PATH" # prefer homebrew binaries
 export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-export PATH="$(/usr/libexec/java_home -v 1.8):$PATH"
 export PATH="/usr/local/lib/node_modules:$PATH"
 export PATH="$PATH:~/Library/Python/2.7/bin"
 export PATH="$PATH:~/.composer"
-export PATH="$PATH:/usr/local/Cellar/node/10.9.0/bin"
-export PATH="$PATH:/Users/barry/Library/Android/sdk/platform-tools"
-export PATH="$PATH:/Users/barry/Library/Android/sdk/tools"
-export PATH="/usr/local/bin:$PATH" # prefer homebrew binaries
-export CLICOLOR=1
-export LSCOLORS=dxfxcxdxbxegedabagacad
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`;
-alias servedir="php -S localhost:3000"
+export PATH="$PATH:/usr/local/sbin"
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- ---  Custom aliases for common things I do  --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+
+alias rosetta="arch -x86_64"
+alias src="cd /Volumes/src"
+alias catscripts="cat package.json | jq '.scripts'"
 
 # Credit http://stackoverflow.com/a/2514279
 alias unmerged="git branch --no-merged"
+alias delete-merged='git branch --merged | egrep -v "(^\*|master|main|dev|next|blue|sandbox|staging)" | xargs git branch -d'
+
+alias up='docker-compose up -d'
+alias down='docker-compose down'
+alias dce='docker-compose exec'
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- ---  Terminal Quality of life improvements  --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- *
+export CLICOLOR=1
+export LSCOLORS=dxfxcxdxbxegedabagacad
 
 grey=`tput setaf 7`
 cyan=`tput setaf 6`

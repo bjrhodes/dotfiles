@@ -63,7 +63,6 @@ packages=(
   pnpm
 )
 
-
 # install homebrew
 if test ! $(which brew); then
   echo "Installing homebrew..."
@@ -124,6 +123,10 @@ code --install-extension sidthesloth.html5-boilerplate --force
 code --install-extension streetsidesoftware.code-spell-checker --force
 code --install-extension Tyriar.lorem-ipsum --force
 code --install-extension unifiedjs.vscode-mdx --force
+
+# Copy VSCode settings
+cp keybindings.json ~/Library/Application Support/Code/User/
+cp settings.json ~/Library/Application Support/Code/User/
 
 mkdir ~/tmp
 cd ~/tmp

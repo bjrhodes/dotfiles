@@ -111,6 +111,7 @@ code --install-extension Asuka.insertnumbers --force
 code --install-extension bmewburn.vscode-intelephense-client --force
 code --install-extension cjhowe7.laravel-blade --force
 code --install-extension dbaeumer.vscode-eslint --force
+code --install-extension deltaxml.xslt-xpath --force
 code --install-extension ecmel.vscode-html-css --force
 code --install-extension eriklynd.json-tools --force
 code --install-extension esbenp.prettier-vscode --force

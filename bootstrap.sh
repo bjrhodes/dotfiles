@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# @todo make the cmd-shift-l work on install!
-
 # CLI binaries via homebrew
 binaries=(
   nvm
@@ -47,6 +45,7 @@ apps=(
   microsoft-outlook
   microsoft-word
   1password
+  postman
 )
 
 # fonts to install through cask
@@ -98,7 +97,12 @@ brew install --cask ${fonts[@]}
 git config --global push.default simple
 git config --global user.email "barry@therhodes.co.uk"
 
-# install node
+# install node via nvm
+# first some stuff the bash_profile normally handles...
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
 nvm install node
 npm install -g ${packages[@]}
 

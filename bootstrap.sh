@@ -39,7 +39,7 @@ apps=(
   sourcetree
   mongodb-compass
   whatsapp
-  sketch
+  figma
   microsoft-excel
   microsoft-teams
   microsoft-outlook
@@ -120,12 +120,12 @@ code --install-extension fabiospampinato.vscode-diff --force
 code --install-extension gerane.Theme-TomorrowNightEighties --force
 code --install-extension GitHub.copilot --force
 code --install-extension GitHub.copilot-chat --force
-code --install-extension mohsen1.prettify-json --force
-code --install-extension redhat.vscode-xml --force
+code --install-extension jbockle.jbockle-format-files --force
 code --install-extension ryu1kn.partial-diff --force
 code --install-extension shufo.vscode-blade-formatter --force
 code --install-extension sidthesloth.html5-boilerplate --force
 code --install-extension streetsidesoftware.code-spell-checker --force
+code --install-extension tshino.kb-macro --force
 code --install-extension Tyriar.lorem-ipsum --force
 code --install-extension unifiedjs.vscode-mdx --force
 
